@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory System (TypeScript)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Inventory Management System</h1>
+      <p>PROG2005 Assignment Part 1 - TypeScript</p>
+    </header>
+
+    <section class="form-section">
+      <h2>Add / Update Item</h2>
+      <form id="inventoryForm">
+        <input type="text" id="itemId" placeholder="Item ID (Unique)" required>
+        <input type="text" id="itemName" placeholder="Item Name" required>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option>Electronics</option>
+          <option>Furniture</option>
+          <option>Clothing</option>
+          <option>Tools</option>
+          <option>Miscellaneous</option>
+        </select>
+        <input type="number" id="quantity" placeholder="Quantity" min="0" required>
+        <input type="number" id="price" placeholder="Price" min="0" step="0.01" required>
+        <input type="text" id="supplier" placeholder="Supplier" required>
+        <select id="stockStatus" required>
+          <option>In Stock</option>
+          <option>Low Stock</option>
+          <option>Out of Stock</option>
+        </select>
+        <select id="popularItem" required>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+        <textarea id="comment" placeholder="Comment (Optional)"></textarea>
+        <div class="btn-group">
+          <button type="button" id="saveBtn">Save</button>
+          <button type="button" id="clearBtn">Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search by name...">
+      <button id="showAllBtn">Show All</button>
+      <button id="showPopularBtn">Show Popular</button>
+    </section>
+
+    <div id="message" class="message"></div>
+
+    <section class="list-section">
+      <h2>Product List</h2>
+      <div id="itemList"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

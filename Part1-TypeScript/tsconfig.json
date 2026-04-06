@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "outDir": "./",
+    "rootDir": "./",
+    "strict": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["./app.ts"],
+  "exclude": []
+}
