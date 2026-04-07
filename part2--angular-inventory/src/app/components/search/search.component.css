@@ -1,0 +1,32 @@
+.search-container {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.result-card {
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-left: 5px solid #2ec4b6;
+  transition: 0.2s;
+}
+
+.result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.result-name {
+  font-weight: 700;
+  color: #3a56d4;
+  margin-bottom: 8px;
+}
