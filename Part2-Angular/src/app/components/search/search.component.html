@@ -1,0 +1,21 @@
+<!-- Search page main container -->
+<div class="search-container card">
+  <h3>Product Search</h3>
+  
+  <!-- Search input field -->
+  <div class="search-bar">
+    <input [(ngModel)]="keyword" (input)="search()" placeholder="Search product by name...">
+  </div>
+
+  <!-- Search result list -->
+  <div class="search-results">
+    <div *ngFor="let r of results" class="result-card">
+      <div class="result-name">{{ r.name }}</div>
+      <div class="result-details">
+        <p>Category: {{ r.category }}</p>
+        <p>Price: ${{ r.price }} | Stock: {{ r.quantity }}</p>
+        <p>Supplier: {{ r.supplier }}</p>
+      </div>
+    </div>
+  </div>
+</div>

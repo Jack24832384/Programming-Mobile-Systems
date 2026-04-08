@@ -1,0 +1,48 @@
+/*
+  Author: Yansong Li
+  Student ID: 24832384
+*/
+/* Privacy Page - Soft gradient background for readability */
+.privacy-container {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e6e9f5 100%);
+  min-height: 80vh;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* White content card with clear contrast */
+.privacy-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+/* Gradient title */
+.privacy-card h2 {
+  background: linear-gradient(90deg, #4361ee, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* High-contrast text */
+.privacy-card p,
+.privacy-card li {
+  color: #2d3748;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.privacy-card ul {
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
